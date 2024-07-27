@@ -1,0 +1,354 @@
+.background {
+    background-color: black;
+    /*background-color: #7b1d2f;*/
+}
+body{
+    margin-top: 100px;
+    
+}
+/* Cabecera de las páginas*/
+
+.header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Puedes ajustar el color de fondo según tus preferencias */
+    z-index: 100; /* Ajusta esto según la superposición deseada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra si lo deseas */
+}
+
+#margen{
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+.logo img {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+    width: 65px;
+    height: auto;
+}
+
+/*FUENTE IMPORTADA*/
+@font-face {
+    font-family: 'steelfish';
+    src: url(/steelfish/steelfish\ bd.otf);
+}
+
+h1 {
+    font-family: 'steelfish' !important;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-family: 'steelfish' !important;
+    font-weight: bold;
+    color: white;
+}
+
+/*ALINEA TEXTO A LA DERECHA*/
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    padding-left: 5px;
+    text-align: justify;
+    float: left;
+}
+.MENUA {
+    font-family: 'steelfish';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.MENUA,:last-child {
+    padding-right: 15px;
+}
+pre{
+    color:silver;
+}
+nav a {
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover {
+    color: #ce8b89;
+}
+
+.imagen{
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 75px;
+} 
+
+.imagencentral img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    padding-top: 15px;
+  }
+  
+
+.contenedor{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedorDerecha{
+    display: flex;
+    justify-content: end;
+}
+
+.texto{
+    flex: 1;
+    padding-right: 25px;
+}
+.textoDerecha{
+    display: block;
+    padding-right: 20px;
+    margin: 10px;
+}
+.APPRINCIPAL{
+    display: block;
+    padding-right: 20px;
+    margin: 10px;
+}
+.Albums{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Albums a{
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+.Albums p:hover{
+    color: #ce8b89;
+}
+.Albums a:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+p{
+    color:silver;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.ImagenDerecha img{
+    flex: auto;
+    width: 890px; 
+    height: auto;
+    padding-right: 75px;
+
+}
+.ImagenDerechaBio img{
+    flex: auto;
+    padding-right: 75px;
+
+}
+
+.ImagenDerechaP img{
+    flex: auto;
+    width: 600px; 
+    height: auto;
+    padding-right: 75px;
+
+}
+.contenedorDerecha p h1{
+    text-align: left;
+    margin: 10px;
+    display: block;
+}
+
+h3{
+    font-family: 'steelfish';
+    font-weight: bold;
+    color: white;
+}
+
+.centro{
+    text-align: center;
+    margin: 10px;
+}
+
+.videos{
+    display: block;
+    margin: 0 auto;
+}
+iframe{
+    align-content: center;
+}
+
+.APP {
+    font-family: 'steelfish';
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    float: right;
+    width: 30%;
+    height: auto;
+    color: white;
+}
+.imagenCentrado img{
+    display: block;
+    margin: 0 auto;
+}
+/*PIE DE PAGINA*/
+
+footer {
+    position: relative; 
+    width: 100%;
+    background-color: black;
+    padding: 25px 0;
+    z-index: 1; 
+    margin-top: 10px;
+    
+}
+
+.contenedorPIE {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px; 
+}
+
+.pie-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pie-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.pie-links h4 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid White;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-family: 'steelfish' !important;
+
+}
+
+.pie-links ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.pie-links ul li a:hover {
+    color: #ccb653;
+    padding-left: 6px;
+    text-decoration: underline;
+}
+/* selector*/
+.ContenedorSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ContenedorSelector .img_Container {
+    width: 400px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.ContenedorSelector .img_Container .main_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ContenedorSelector .thumbnail_contenedor {
+    height: 80px;
+    display: flex;
+}
+
+.ContenedorSelector .thumbnail_contenedor .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    margin-right: 10px;
+    opacity: .7;
+    transition: .4s;
+}
+
+.ContenedorSelector .thumbnail_contenedor .thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+/*SECTION*/
+section{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    max-width: 900px; 
+    height: 500px;
+    margin: 0 auto;
+  }
+  section a{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  section img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
